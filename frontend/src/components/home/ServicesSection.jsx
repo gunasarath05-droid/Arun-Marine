@@ -20,7 +20,7 @@ const ServicesSection = () => {
     return (
         <section className="bg-white">
             {/* Top Featured Image */}
-            <div className="relative h-[600px] w-full">
+            <div className="relative h-[600px] w-full" data-aos="zoom-out" data-aos-duration="1500">
                 <img
                     src={ctaBg}
                     alt="Marine Services"
@@ -38,7 +38,7 @@ const ServicesSection = () => {
 
                 <div className="container mx-auto px-6 relative z-10">
                     {/* Header inside the dark section */}
-                    <div className="text-center mb-20">
+                    <div className="text-center mb-20" data-aos="fade-up">
                         <div className="inline-block mb-3">
                             <span className="h-[2px] w-8 bg-primary inline-block align-middle mr-2"></span>
                             <span className="text-primary font-bold uppercase tracking-widest text-xs align-middle">Our Expertise</span>
@@ -49,7 +49,7 @@ const ServicesSection = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                         {/* Registration Services */}
-                        <Link to="/services/registration" className="group">
+                        <Link to="/services/registration" className="group" data-aos="fade-up" data-aos-delay="100">
                             <div className="text-white mb-6 transform group-hover:translate-x-4 transition-transform duration-500">
                                 <Anchor size={50} strokeWidth={2} />
                             </div>
@@ -70,7 +70,7 @@ const ServicesSection = () => {
                         </Link>
 
                         {/* Engineering Services */}
-                        <Link to="/services/engineering" className="group">
+                        <Link to="/services/engineering" className="group" data-aos="fade-up" data-aos-delay="200">
                             <div className="text-white mb-6 transform group-hover:translate-x-4 transition-transform duration-500">
                                 <Settings size={50} strokeWidth={2} />
                             </div>
@@ -91,7 +91,7 @@ const ServicesSection = () => {
                         </Link>
 
                         {/* Marine Tourism */}
-                        <Link to="/services/tourism" className="group">
+                        <Link to="/services/tourism" className="group" data-aos="fade-up" data-aos-delay="300">
                             <div className="text-white mb-6 transform group-hover:translate-x-4 transition-transform duration-500">
                                 <Ship size={50} strokeWidth={2} />
                             </div>
@@ -112,7 +112,7 @@ const ServicesSection = () => {
                         </Link>
 
                         {/* Yacht Maintenance */}
-                        <Link to="/services/maintenance" className="group">
+                        <Link to="/services/maintenance" className="group" data-aos="fade-up" data-aos-delay="400">
                             <div className="text-white mb-6 transform group-hover:translate-x-4 transition-transform duration-500">
                                 <Wrench size={50} strokeWidth={2} />
                             </div>

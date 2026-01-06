@@ -55,7 +55,7 @@ const About = () => {
             <PageHero title="Who We Are" bgImage={aboutBg} className="h-[50vh] " />
 
             {/* Discover More / About Section */}
-            <section className="py-16 md:py-24 lg:py-32 relative overflow-hidden bg-white">
+            <section className="py-16 md:py-24 lg:py-32 relative overflow-hidden bg-white" data-aos="fade-up">
                 {/* Subtle Background Pattern */}
                 <div
                     className="absolute inset-0 opacity-[20%] pointer-events-none bg-repeat bg-center"
@@ -70,7 +70,7 @@ const About = () => {
                         {/* LEFT: Image & 'Start In' Graphic */}
                         <div className="lg:w-1/2 relative min-h-[400px] md:min-h-[550px] lg:min-h-[650px]">
                             {/* Background Big Number */}
-                            <div className="absolute -top-8 md:-top-16 -right-4 md:-right-8 text-[80px] md:text-[120px] lg:text-[180px] font-serif font-bold text-[#c09550] leading-none select-none">
+                            <div className="absolute -top-4 sm:-top-8 md:-top-16 right-0 md:-right-8 text-[60px] sm:text-[80px] md:text-[120px] lg:text-[180px] font-serif font-bold text-[#c09550] leading-none select-none opacity-50 sm:opacity-100">
                                 <CountUp end={2022} duration={1} enableScrollSpy scrollSpyOnce />
                             </div>
 
@@ -186,7 +186,7 @@ const About = () => {
             </section>
 
             {/* Our Vision Section */}
-            <section className="py-16 md:py-20 lg:py-24 bg-gray-50 text-center relative z-10">
+            <section className="py-16 md:py-20 lg:py-24 bg-gray-50 text-center relative z-10" data-aos="fade-up">
                 <div className="container mx-auto px-6 max-w-4xl">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
@@ -213,7 +213,7 @@ const About = () => {
             </section>
 
             {/* Stats Counter Section */}
-            <section className="py-16 md:py-24 lg:py-32 bg-white relative overflow-hidden">
+            <section className="py-16 md:py-24 lg:py-32 bg-white relative overflow-hidden" data-aos="fade-up">
                 <div className="container mx-auto px-6 relative z-10">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
                         {[
@@ -223,7 +223,7 @@ const About = () => {
                             { label: "Successful Projects", value: 120, suffix: "+" }
                         ].map((stat, index) => (
                             <div key={index} className="text-center relative group">
-                                <div className="absolute -top-10 left-1/2 -translate-x-1/2 text-9xl font-serif font-bold text-gray-50 -z-10 select-none group-hover:text-gray-100 transition-colors">
+                                <div className="absolute -top-6 sm:-top-10 left-1/2 -translate-x-1/2 text-7xl sm:text-9xl font-serif font-bold text-gray-50 -z-10 select-none group-hover:text-gray-100 transition-colors">
                                     {stat.value}
                                 </div>
                                 <div className="relative z-10 pt-4">
@@ -241,7 +241,7 @@ const About = () => {
             </section>
 
             {/* Testimonials */}
-            <section className="py-16 md:py-24 lg:py-32 bg-[#f8f7f5] relative overflow-hidden">
+            <section className="py-16 md:py-24 lg:py-32 bg-[#f8f7f5] relative overflow-hidden" data-aos="fade-up">
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
 
                 <div className="container mx-auto px-6">
@@ -355,7 +355,7 @@ const About = () => {
             </section>
 
             {/* CTA Section */}
-            <section className="relative py-20 md:py-32 lg:py-40 flex items-center justify-center overflow-hidden bg-secondary">
+            <section className="relative py-20 md:py-32 lg:py-40 flex items-center justify-center overflow-hidden bg-secondary" data-aos="zoom-out">
                 <div className="absolute inset-0 z-0">
                     <img
                         src={ctaBg}

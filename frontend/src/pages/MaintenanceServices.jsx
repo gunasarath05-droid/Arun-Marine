@@ -20,7 +20,7 @@ const MaintenanceServices = () => {
             <div className="container mx-auto px-6 py-20">
                 <div className="flex flex-col lg:flex-row gap-16">
                     {/* Main Content (Left, 3/4 width) */}
-                    <div className="lg:w-3/4">
+                    <div className="lg:w-3/4" data-aos="fade-up">
                         <h2 className="text-3xl md:text-5xl font-serif font-bold text-secondary mb-6 leading-tight">
                             Keep Your Vessel in <br />
                             <span className="italic text-secondary">Prime Condition</span>
@@ -115,7 +115,7 @@ const MaintenanceServices = () => {
                         </div>
 
                         {/* Why Choose Us Section - Matching Registration Design */}
-                        <div className="">
+                        <div data-aos="fade-up">
                             <h2 className="text-4xl font-serif font-bold text-secondary mb-12 text-center">Why Choose Us?</h2>
 
                             <div className="bg-[#f8f7f5] p-12 rounded-xl flex flex-col md:flex-row gap-12 items-center">
@@ -142,7 +142,7 @@ const MaintenanceServices = () => {
                     </div>
 
                     {/* Sidebar (Right, 1/4 width) - Matching Registration Structure */}
-                    <div className="lg:w-1/4 space-y-12 h-fit sticky top-24">
+                    <div className="lg:w-1/4 space-y-12 h-fit sticky top-24" data-aos="fade-left">
                         {/* Search Widget */}
                         <div className="bg-white">
                             <h4 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Search</h4>

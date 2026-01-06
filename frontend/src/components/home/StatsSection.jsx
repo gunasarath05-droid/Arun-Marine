@@ -89,7 +89,7 @@ const StatsSection = () => {
         <React.Fragment>
             {/* Stats Counter Section */}
             <section className="py-32 bg-white relative overflow-hidden">
-                <div className="container mx-auto px-6 relative z-10">
+                <div className="container mx-auto px-6 relative z-10" data-aos="fade-up">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
                         {[
                             { label: "Vessel Registrations", value: 1000, suffix: "+" },
@@ -127,6 +127,8 @@ const StatsSection = () => {
                         className="relative group/carousel"
                         onMouseEnter={() => setIsPaused(true)}
                         onMouseLeave={() => setIsPaused(false)}
+                        data-aos="fade-up"
+                        data-aos-delay="200"
                     >
                         {/* Custom Auto-scrolling Grid */}
                         <div className="overflow-hidden px-2">
@@ -198,7 +200,7 @@ const StatsSection = () => {
                 <div className="container mx-auto px-6 relative z-10">
                     <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
                         {/* Images / Team Collage (Left) */}
-                        <div className="lg:w-1/2 flex gap-6 items-start">
+                        <div className="lg:w-1/2 flex gap-6 items-start" data-aos="fade-right">
                             <div className="w-1/2 mt-12">
                                 <div className="rounded-sm overflow-hidden shadow-2xl">
                                     <img src={weImg} alt="Marine Service Team" className="w-full h-[450px] lg:h-[600px] object-cover" />
@@ -212,7 +214,7 @@ const StatsSection = () => {
                         </div>
 
                         {/* Text Content (Right) */}
-                        <div className="lg:w-1/2 flex flex-col justify-center">
+                        <div className="lg:w-1/2 flex flex-col justify-center" data-aos="fade-left">
                             <div className="mb-6">
                                 <span className="text-secondary font-bold uppercase tracking-[0.3em] text-[10px] opacity-70">Highlights</span>
                             </div>
@@ -228,25 +230,25 @@ const StatsSection = () => {
                             </p>
 
                             <ul className="space-y-6 mb-14">
-                                <li className="flex items-center text-secondary font-semibold text-lg">
+                                <li className="flex items-center text-secondary font-semibold text-lg" data-aos="fade-up" data-aos-delay="200">
                                     <span className="text-primary mr-4 text-xl">✓</span>
                                     Trusted Registration Services
                                 </li>
-                                <li className="flex items-center text-secondary font-semibold text-lg">
+                                <li className="flex items-center text-secondary font-semibold text-lg" data-aos="fade-up" data-aos-delay="300">
                                     <span className="text-primary mr-4 text-xl">✓</span>
                                     Amazing Packages for Yacht Rentals
                                 </li>
-                                <li className="flex items-center text-secondary font-semibold text-lg">
+                                <li className="flex items-center text-secondary font-semibold text-lg" data-aos="fade-up" data-aos-delay="400">
                                     <span className="text-primary mr-4 text-xl">✓</span>
                                     Unlimited Trip Time
                                 </li>
-                                <li className="flex items-center text-secondary font-semibold text-lg">
+                                <li className="flex items-center text-secondary font-semibold text-lg" data-aos="fade-up" data-aos-delay="500">
                                     <span className="text-primary mr-4 text-xl">✓</span>
                                     Huge Destination Selection
                                 </li>
                             </ul>
 
-                            <Link to="/about" className="bg-primary hover:bg-[#e65c00] text-white font-bold py-5 px-12 w-fit shadow-xl transition-all duration-300 uppercase tracking-widest text-xs">
+                            <Link to="/about" className="bg-primary hover:bg-[#e65c00] text-white font-bold py-4 px-6 rounded-lg w-fit shadow-xl transition-all duration-300 uppercase tracking-widest text-xs">
                                 About Us
                             </Link>
                         </div>

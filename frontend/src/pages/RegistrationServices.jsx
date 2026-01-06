@@ -21,7 +21,7 @@ const RegistrationServices = () => {
             <div className="container mx-auto px-6 py-12 md:py-16 lg:py-20">
                 <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
                     {/* Main Content (Left, 3/4 width to match proportion) */}
-                    <div className="lg:w-3/4">
+                    <div className="lg:w-3/4" data-aos="fade-up">
                         <h2 className="text-2xl md:text-4xl lg:text-5xl font-serif font-bold text-secondary mb-4 md:mb-6 leading-tight">
                             The Best Yacht Registration Services in <br />
                             <span className="italic text-secondary">UAE</span>
@@ -122,7 +122,7 @@ const RegistrationServices = () => {
                         </div>
 
                         {/* Why Choose Us Section */}
-                        <div className="">
+                        <div data-aos="fade-up">
                             <h2 className="text-3xl md:text-4xl font-serif font-bold text-secondary mb-8 md:mb-12 text-center">Why Choose Us?</h2>
 
                             <div className="bg-[#f8f7f5] p-6 md:p-10 lg:p-12 rounded-xl flex flex-col md:flex-row gap-8 md:gap-12 items-center"> {/* Changed background color */}
@@ -150,7 +150,7 @@ const RegistrationServices = () => {
                     </div>
 
                     {/* Sidebar (Right, 1/4 width) */}
-                    <div className="lg:w-1/4 space-y-8 md:space-y-12 h-fit lg:sticky lg:top-24">
+                    <div className="lg:w-1/4 space-y-8 md:space-y-12 h-fit lg:sticky lg:top-24" data-aos="fade-left">
                         {/* Search Widget */}
                         <div className="bg-white">
                             <h4 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Search</h4>

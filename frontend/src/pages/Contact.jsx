@@ -48,7 +48,7 @@ const Contact = () => {
                 <div className="container mx-auto px-6">
                     <div className="flex flex-col md:flex-row gap-16">
                         {/* Contact Details (Left) */}
-                        <div className="md:w-1/3">
+                        <div className="md:w-1/3" data-aos="fade-right">
                             <h2 className="text-2xl md:text-3xl font-serif font-bold text-secondary mb-6 md:mb-8">Contact Details</h2>
 
                             <div className="space-y-8 text-sm text-gray-500 font-medium">
@@ -81,7 +81,7 @@ const Contact = () => {
                         </div>
 
                         {/* Contact Form (Right) */}
-                        <div className="md:w-2/3">
+                        <div className="md:w-2/3" data-aos="fade-left">
                             {status === 'success' ? (
                                 <div className="bg-green-50 p-8 rounded-lg text-center border border-green-100">
                                     <h3 className="text-2xl font-bold text-green-600 mb-2">Message Sent!</h3>
@@ -96,7 +96,7 @@ const Contact = () => {
                                             <input
                                                 type="text" name="name" placeholder="Name" required
                                                 value={formData.name} onChange={handleChange}
-                                                className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded focus:border-primary focus:outline-none bg-gray-50 placeholder-gray-400 text-sm"
+                                                className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none bg-white placeholder-gray-500 text-base"
                                             />
                                         </div>
                                         <div className="relative">
@@ -104,7 +104,7 @@ const Contact = () => {
                                             <input
                                                 type="email" name="email" placeholder="Email Address" required
                                                 value={formData.email} onChange={handleChange}
-                                                className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded focus:border-primary focus:outline-none bg-gray-50 placeholder-gray-400 text-sm"
+                                                className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none bg-white placeholder-gray-500 text-base"
                                             />
                                         </div>
                                     </div>
@@ -115,7 +115,7 @@ const Contact = () => {
                                             <input
                                                 type="text" name="phone" placeholder="Phone"
                                                 value={formData.phone} onChange={handleChange}
-                                                className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded focus:border-primary focus:outline-none bg-gray-50 placeholder-gray-400 text-sm"
+                                                className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none bg-white placeholder-gray-500 text-base"
                                             />
                                         </div>
                                         <div className="relative">
@@ -123,7 +123,7 @@ const Contact = () => {
                                             <input
                                                 type="text" name="subject" placeholder="Subject" required
                                                 value={formData.subject} onChange={handleChange}
-                                                className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded focus:border-primary focus:outline-none bg-gray-50 placeholder-gray-400 text-sm"
+                                                className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none bg-white placeholder-gray-500 text-base"
                                             />
                                         </div>
                                     </div>
@@ -133,13 +133,13 @@ const Contact = () => {
                                         <textarea
                                             name="message" rows="5" placeholder="How can we help you? Feel free to get in touch!" required
                                             value={formData.message} onChange={handleChange}
-                                            className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded focus:border-primary focus:outline-none bg-gray-50 placeholder-gray-400 text-sm"
+                                            className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none bg-white placeholder-gray-500 text-base transition-all"
                                         ></textarea>
                                     </div>
 
                                     <div className="flex items-center gap-2">
                                         <input type="checkbox" required className="w-4 h-4 text-primary focus:ring-primary border-gray-300 rounded" />
-                                        <span className="text-xs text-gray-400">I agree that my submitted data is being collected and stored.</span>
+                                        <span className="text-xs text-gray-600">I agree that my submitted data is being collected and stored.</span>
                                     </div>
 
                                     <button
@@ -174,15 +174,15 @@ const Contact = () => {
                 <div className="absolute inset-0 bg-gray-900 z-0">
                     <img src={skylineBg} alt="Dubai Skyline" className="w-full h-full object-cover opacity-60" />
                 </div>
-                <div className="container mx-auto px-6 relative z-10 text-center text-white">
+                <div className="container mx-auto px-6 relative z-10 text-center text-white" data-aos="zoom-in">
                     <p className="text-xs font-bold uppercase tracking-widest mb-2 text-primary">Rental Agency</p>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-6 md:mb-8">
                         Looking to Rent or <br />
                         Register Your Yacht?
                     </h2>
-                    <button className="bg-primary hover:bg-[#e65c00] text-white font-bold py-4 px-10 rounded shadow-lg transition-transform hover:-translate-y-1 uppercase tracking-widest text-xs">
+                    <Link to="/yachts" className="bg-primary hover:bg-[#e65c00] text-white font-bold py-4 px-10 rounded shadow-lg transition-transform hover:-translate-y-1 uppercase tracking-widest text-xs">
                         Learn More
-                    </button>
+                    </Link>
                 </div>
             </section>
         </div>

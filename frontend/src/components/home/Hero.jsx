@@ -6,7 +6,7 @@ const Hero = () => {
     return (
         <section className="relative h-screen flex items-center justify-center bg-secondary overflow-hidden">
             {/* Background Image with Gradient Overlay */}
-            <div className="absolute inset-0 z-0">
+            <div className="absolute inset-0 z-0" data-aos="zoom-out" data-aos-duration="2000">
                 <img
                     src={heroBg}
                     alt="Luxury Yacht in Dubai"
@@ -17,17 +17,17 @@ const Hero = () => {
             </div>
 
             <div className="relative z-10 text-center text-white px-4 max-w-6xl mx-auto mt-16">
-                <h1 className="text-4xl md:text-7xl lg:text-8xl font-serif font-medium mb-6 leading-tight drop-shadow-lg tracking-tight">
+                <h1 className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-serif font-medium mb-6 leading-tight drop-shadow-lg tracking-tight" data-aos="fade-up" data-aos-delay="300">
                     Premium Yacht Services <br />
                     <span className="italic">& Rentals</span>
                 </h1>
 
-                <p className="text-sm md:text-lg mb-8 max-w-xl mx-auto font-medium tracking-widest uppercase opacity-90 drop-shadow-md">
+                <p className="text-sm md:text-lg mb-8 max-w-xl mx-auto font-medium tracking-widest uppercase opacity-90 drop-shadow-md" data-aos="fade-up" data-aos-delay="500">
                     Navigate Legally, Sail Confidently.<br />
                     <span className="text-[10px] md:text-xs opacity-80 mt-2 block">Secure your vessel with hassle-free legal solutions</span>
                 </p>
 
-                <div className="flex flex-col md:flex-row gap-6 justify-center mt-12">
+                <div className="flex flex-col md:flex-row gap-6 justify-center mt-12" data-aos="fade-up" data-aos-delay="700">
                     <Link
                         to="/contact"
                         className="bg-primary hover:bg-[#e65c00] text-white font-bold py-4 px-12 rounded shadow-[0_10px_20px_rgba(255,107,0,0.3)] transition-all transform hover:-translate-y-1 uppercase tracking-widest text-xs md:text-sm"

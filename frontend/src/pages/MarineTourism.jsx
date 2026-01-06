@@ -117,7 +117,7 @@ const MarineTourism = () => {
 
             <div className="container mx-auto px-6 py-24">
                 {/* Header & Filters */}
-                <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
+                <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16" data-aos="fade-up">
                     <div className="max-w-2xl">
                         <div className="flex items-center gap-3 mb-4">
                             <span className="h-[2px] w-12 bg-primary"></span>
@@ -228,7 +228,7 @@ const MarineTourism = () => {
                     <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary rounded-full blur-[200px] -mr-[400px] -mt-[400px]"></div>
                 </div>
 
-                <div className="container mx-auto px-6 relative z-10 text-center">
+                <div className="container mx-auto px-6 relative z-10 text-center" data-aos="zoom-in">
                     <h3 className="text-3xl md:text-5xl font-serif font-bold text-white mb-8">Ready to Sail the City of Gold?</h3>
                     <p className="text-white/60 max-w-2xl mx-auto mb-12 text-lg font-medium leading-relaxed italic">
                         "Our dedicated concierge team is available 24/7 to help you plan the perfect nautical experience Tailored to your specific needs."

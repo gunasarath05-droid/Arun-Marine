@@ -18,13 +18,13 @@ const ReferEarn = () => {
         <div className="bg-white">
             <PageHero title="Refer & Earn" bgImage={heroBg} />
 
-            <section className="pt-12 md:pt-16 lg:pt-20">
-                <div className="container mx-auto px-6 text-center">
-                    <p className="max-w-3xl mx-auto text-gray-500 mb-8 md:mb-12 leading-relaxed text-base md:text-lg">
+            <section className="py-12 md:py-16 lg:py-20">
+                <div className="container mx-auto px-6 text-center" data-aos="fade-up">
+                    <p className="max-w-3xl mx-auto text-gray-700 mb-8 md:mb-12 leading-relaxed text-base md:text-lg">
                         Earn Rewards by Referring Friends! Share the experience of our exceptional boat registration, technical services, and yacht rentals with your network. For every successful referral, you'll earn credits towards our services, making it easier and more rewarding for you to enjoy our offerings. The more you refer, the more you earn – it's that simple!
                     </p>
 
-                    <div className="flex justify-center mb-12">
+                    <div className="flex justify-center mb-12" data-aos="zoom-in" data-aos-delay="200">
                         <div className="max-w-2xl w-full rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300 border-4 border-white">
                             <img src={flyerImg} alt="Refer and Earn Flyer" className="w-full h-auto" />
                         </div>
@@ -37,7 +37,7 @@ const ReferEarn = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="h-[300px] md:h-[450px] lg:h-[600px] w-full mt-8 md:mt-12">
+                <div className="h-[300px] md:h-[450px] lg:h-[600px] w-full mt-8 md:mt-12" data-aos="zoom-out" data-aos-duration="1500">
                     <img
                         src={ctaBg}
                         alt="Marine Services"

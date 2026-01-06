@@ -3,13 +3,20 @@ import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Linkedin, MapPin, Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
+    const handleScrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
     return (
         <footer className="bg-[#0b1c3e] text-white pt-24 pb-12">
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-gray-800 pb-16">
                     {/* Brand / About */}
                     <div className="md:col-span-2">
-                        <Link to="/" className="inline-block mb-6">
+                        <Link to="/" className="inline-block mb-6" onClick={handleScrollToTop}>
                             {/* Use logo if available here or text */}
                             <h3 className="text-3xl font-serif font-bold italic">Marine Services</h3>
                         </Link>
@@ -38,10 +45,10 @@ const Footer = () => {
                             <span className="absolute -bottom-2 left-0 w-8 h-[2px] bg-primary"></span>
                         </h4>
                         <ul className="space-y-4 text-sm font-medium tracking-wide">
-                            <li><Link to="/" className="text-gray-400 hover:text-primary transition-colors flex items-center"><span className="mr-2">›</span> Home</Link></li>
-                            <li><Link to="/about" className="text-gray-400 hover:text-primary transition-colors flex items-center"><span className="mr-2">›</span> Who We Are</Link></li>
-                            <li><Link to="/services" className="text-gray-400 hover:text-primary transition-colors flex items-center"><span className="mr-2">›</span> Our Services</Link></li>
-                            <li><Link to="/contact" className="text-gray-400 hover:text-primary transition-colors flex items-center"><span className="mr-2">›</span> Contact Us</Link></li>
+                            <li><Link to="/" className="text-gray-400 hover:text-primary transition-colors flex items-center" onClick={handleScrollToTop}><span className="mr-2">›</span> Home</Link></li>
+                            <li><Link to="/about" className="text-gray-400 hover:text-primary transition-colors flex items-center" onClick={handleScrollToTop}><span className="mr-2">›</span> About Us</Link></li>
+                            <li><Link to="/services" className="text-gray-400 hover:text-primary transition-colors flex items-center" onClick={handleScrollToTop}><span className="mr-2">›</span> Our Services</Link></li>
+                            <li><Link to="/contact" className="text-gray-400 hover:text-primary transition-colors flex items-center" onClick={handleScrollToTop}><span className="mr-2">›</span> Contact Us</Link></li>
                         </ul>
                     </div>
 

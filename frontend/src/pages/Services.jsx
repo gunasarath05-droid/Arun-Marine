@@ -23,7 +23,7 @@ const Services = () => {
         <div className="bg-white">
             <PageHero title="Our Services" bgImage={serviceBg} />
 
-            <section className="py-12 md:py-16 lg:py-20 text-center container mx-auto px-6">
+            <section className="py-12 md:py-16 lg:py-20 text-center container mx-auto px-6" data-aos="fade-up">
                 <p className="text-primary font-bold uppercase tracking-widest text-xs mb-4">Expert Solutions Delivered</p>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-secondary mb-12 md:mb-16 max-w-4xl mx-auto leading-tight">
                     "Registration, Technical Support, and Rentals Made Easy."
@@ -31,7 +31,7 @@ const Services = () => {
 
                 <div className="space-y-16 md:space-y-20 lg:space-y-24">
                     {/* Service 1: Registration */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-left">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-left" data-aos="fade-up">
                         <div className="rounded-xl overflow-hidden shadow-2xl h-[250px] md:h-[350px] lg:h-[400px]">
                             <img src={regImg} alt="Registration" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                         </div>
@@ -54,7 +54,7 @@ const Services = () => {
                     </div>
 
                     {/* Service 2: Engineering */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-left md:flex-row-reverse">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-left md:flex-row-reverse" data-aos="fade-up">
                         <div className="md:order-2 rounded-xl overflow-hidden shadow-2xl h-[250px] md:h-[350px] lg:h-[400px]">
                             <img src={engImg} alt="Engineering" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                         </div>
@@ -77,7 +77,7 @@ const Services = () => {
                     </div>
 
                     {/* Service 3: Marine Tourism */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-left">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-left" data-aos="fade-up">
                         <div className="rounded-xl overflow-hidden shadow-2xl h-[250px] md:h-[350px] lg:h-[400px]">
                             <img src={tourImg} alt="Tourism" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                         </div>
@@ -98,7 +98,7 @@ const Services = () => {
                     </div>
 
                     {/* Service 4: Maintenance */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-left">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-left" data-aos="fade-up">
                         <div className="md:order-2 rounded-xl overflow-hidden shadow-2xl h-[250px] md:h-[350px] lg:h-[400px]">
                             <img src={maintImg} alt="Maintenance" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                         </div>
@@ -123,7 +123,7 @@ const Services = () => {
             </section>
 
             {/* Dark Blue Features Section */}
-            <section className="bg-[#0b1c3e] py-16 md:py-20 lg:py-24 text-white relative overflow-hidden">
+            <section className="bg-[#0b1c3e] py-16 md:py-20 lg:py-24 text-white relative overflow-hidden" data-aos="fade-up">
                 {/* Background Map Outline Overlay - subtle */}
                 <div
                     className="absolute inset-0 opacity-5 bg-center bg-no-repeat bg-contain"
@@ -241,7 +241,7 @@ const Services = () => {
             <PartnersSection />
 
             {/* Best Service Section */}
-            <section className="py-12 md:py-16 lg:py-20 bg-gray-50 flex items-center">
+            <section className="py-12 md:py-16 lg:py-20 bg-gray-50 flex items-center" data-aos="fade-up">
                 <div className="container mx-auto px-6">
                     <div className="flex flex-col md:flex-row gap-16 items-center">
                         <div className="md:w-1/2 flex gap-4 h-[300px] md:h-[350px] lg:h-[400px]">

@@ -5,8 +5,10 @@
 @tailwind utilities;
 
 @layer base {
+
+  html,
   body {
-    @apply font-sans bg-background text-secondary;
+    @apply font-sans bg-background text-secondary overflow-x-hidden;
   }
 
   h1,
@@ -16,5 +18,23 @@
   h5,
   h6 {
     @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .animate-bounce-slow {
+    animation: bounce-slow 4s infinite ease-in-out;
+  }
+
+  @keyframes bounce-slow {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-15px);
+    }
   }
 }

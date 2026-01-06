@@ -54,7 +54,7 @@ const FeaturedYachts = () => {
             ></div>
 
             <div className="container mx-auto px-6 relative z-10">
-                <div className="text-center mb-16">
+                <div className="text-center mb-16" data-aos="fade-up">
                     <div className="inline-block mb-3">
                         <span className="h-[2px] w-8 bg-primary inline-block align-middle mr-2"></span>
                         <span className="text-gray-400 font-bold uppercase tracking-widest text-xs align-middle">Our Fleet</span>
@@ -66,8 +66,8 @@ const FeaturedYachts = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-                    {yachts.map((yacht) => (
-                        <div key={yacht.id} className="bg-white rounded-md overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group border border-gray-50 flex flex-col">
+                    {yachts.map((yacht, index) => (
+                        <div key={yacht.id} className="bg-white rounded-md overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group border border-gray-50 flex flex-col" data-aos="fade-up" data-aos-delay={index * 100}>
                             <div className="relative overflow-hidden h-72">
                                 <img
                                     src={yacht.image}
@@ -112,7 +112,7 @@ const FeaturedYachts = () => {
                 <div className="flex justify-center mt-10">
                     <Link to="/yachts" className="bg-primary hover:bg-[#e65c00] text-white font-bold py-4 px-10 rounded shadow-lg transition-transform hover:-translate-y-1 uppercase tracking-wider text-xs">
                         View All Yachts
-                    </Link> 
+                    </Link>
                 </div>
             </div>
         </section>
