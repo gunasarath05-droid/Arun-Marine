@@ -10,7 +10,7 @@ const PageHero = ({ title, bgImage, className = "" }) => {
                     alt={title}
                     className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/40"></div>
+                <div className="absolute inset-0 bg-black/10"></div>
             </div>
 
             <div className="container mx-auto px-6 relative z-10 text-center text-white">
